@@ -1,0 +1,76 @@
+/* ============================
+   Global Reset
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across elements */
+}
+
+/* ============================
+   Main Container Styling
+============================ */
+.container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    background: #9cf1b6; /* Light green background */
+}
+
+/* ============================
+   Social Media Icon Styling
+============================ */
+.icons a {
+    display: inline-flex; /* Center icons inside anchor */
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Spacing between icons */
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Smooth transitions for hover effects */
+    transition: background-position 0.5s,
+                color 0.5s,
+                width 0.5s,
+                height 0.5s,
+                font-size 0.5s;
+
+    background-size: 100% 200%;
+    background-position: 0 5%;
+}
+
+/* ============================
+   Individual Icon Colors
+============================ */
+.icons a:nth-child(1) {
+    color: #1976d3; /* Facebook blue */
+    background-image: linear-gradient(#FFF 50%, #1976d3 50%);
+}
+
+.icons a:nth-child(2) {
+    color: #f44236; /* YouTube red */
+    background-image: linear-gradient(#FFF 50%, #f44236 50%);
+}
+
+.icons a:nth-child(3) {
+    color: #03a9f5; /* Twitter blue */
+    background-image: linear-gradient(#FFF 50%, #03a9f5 50%);
+}
+
+/* ============================
+   Hover Effect for Icons
+============================ */
+.icons a:hover {
+    background-position: 0 100%; /* Slide gradient */
+    color: white;
+    width: 200px; /* Grow icon on hover */
+    height: 200px;
+    font-size: 70px;
+}
